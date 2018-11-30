@@ -42,7 +42,7 @@ b2="coding"
 hello_world_2args(a1, b1)
 hello_world_2args(a2, b2)   
 """
-"""
+
 def add_two_numbers():
     a = int((input("enter a number: ")))
     b= int((input("enter a number: ")))
@@ -50,7 +50,7 @@ def add_two_numbers():
     print("{} added to {} is {}".format(a, b, sumofboth))
     
 add_two_numbers()
-"""
+
 def add_two_numbers_args(a, b, c):
     print("{} added to {} is {}".format(a,b,c))
 a = int((input("enter a number: ")))
