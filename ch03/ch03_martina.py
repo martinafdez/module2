@@ -39,3 +39,11 @@ country = input()
 age=input()
 
 print("hello{}! you are from {}. you are {} years old.".format(name.upper(), country.upper(), age.upper()))
+
+
+
+
+
+
+def hello_world():
+    print("Hello  World!")
