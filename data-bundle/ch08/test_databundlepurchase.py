@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Dec 11 13:58:09 2018
+Created on Tue Dec 11 14:06:31 2018
 
-@author: mluci
+@author: 612383263
 """
 
 from SimpleBundlePurchase import DataBundlePurchase
@@ -15,7 +15,7 @@ print ('-----\nRESULT:', result)
 print ('-' * 50, '\n')
 
 print ('TEST EXAMPLE 2')
-result = DataBundlePurchase('2345', 22.00)
+result = DataBundlePurchase('2345', -22.00)
 print ('-----\nRESULT:', result)
 print ('-' * 50, '\n')
 
