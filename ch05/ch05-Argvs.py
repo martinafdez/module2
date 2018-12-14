@@ -4,7 +4,7 @@ Created on Thu Dec  6 11:23:03 2018
 
 @author: mluci
 """
-
+#further class practice with real life applications
 
 #class Customer(object):
 #    """A customer of ABC Bank with a checking account. Customers have the following properties:

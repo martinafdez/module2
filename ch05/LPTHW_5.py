@@ -1,22 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Dec  6 13:46:26 2018
+Created on Fri Dec 14 10:55:58 2018
 
 @author: mluci
 """
-#practice with argv for practicing with the command line
-import sys
-print(sys.argv) #argv returns a list of al the argumetns in your programme
-
-
-#import sys
-#
-#if len(sys.argv) < 2:
-#    print("what is your name")
-#    sys.exit()
-#    
-#print("Hello, " + sys.argv[1])
-
 
 ##argv LPTHW
 from sys import argv
@@ -49,10 +36,5 @@ target.write("\n")
 
 print ("And finally, we close it.")
 target.close()
-
-
-
-
-
 
 

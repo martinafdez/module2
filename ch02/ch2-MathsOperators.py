@@ -5,7 +5,7 @@ Spyder Editor
 This is a temporary script file.
 """
 
-
+#intro to maths operators
 5-6
 8*9
 6/2
@@ -14,7 +14,7 @@ This is a temporary script file.
 5%2
 2*(10+3)
 2**4
-
+#variables and printing
 age=5
 age="almost three"
 age=29.5
@@ -32,7 +32,7 @@ S1='hello' + 'world'
 S2="Joke " * 3
 S3=5
 
-
+#conversion to integers
 
 s1 = '4'
 s2 = '6'
@@ -42,7 +42,7 @@ print(result)
 
 strExample='a-b-b-d-happy'
 print(strExample.split('-'))
-
+#.format function
 age=5 
 like="painting"
 
@@ -86,7 +86,7 @@ print(f)
 print(f*5)
 
 
-#LPTHW questions#
+#LPTHW questions for this chapter#
 
 print ("hello world!")
 print("hello again")

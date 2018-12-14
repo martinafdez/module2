@@ -4,10 +4,12 @@ Created on Wed Dec  5 10:10:05 2018
 
 @author: mluci
 """
-import sys
+#lesson 5 introduting classes
+
+import sys #import module sys to access .argv
 
 class customer:
-    def __init__(self, name, age):
+    def __init__(self, name, age): #line which initialises object, requires self parameter to be stated explicitly
         self.name=name
         self.age=age
     def greeting(customer):

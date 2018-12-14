@@ -4,7 +4,7 @@ Spyder Editor
 
 This is a temporary script file.
 """
-
+##First python lesson
 A =2 + 3
 B = 2.9+3.2
 C = (3.2/2.0) + 7

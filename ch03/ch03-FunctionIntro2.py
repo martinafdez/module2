@@ -1,56 +1,71 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Nov 30 13:58:32 2018
+Created on Tue Dec  4 09:43:32 2018
 
 @author: mluci
 """
-
-print("What's your name? ")
-name=input()
-
-print("Hello {}!".format(name).upper())
-
-
-print("how old are you? ")
-age=input()
-
-print("you are {}.".format(age))
-
-
-print("whats your name and how old are you? ")
-name=input()
-age=input()
-
-print("Hello {0}! You are {1}.".format(name, age))
-
-print("what's your name?")
-name=input()
-
-print("hello {}!".format(name.upper()))
-
-print("what's your name?")
-name=input()
-
-print("hello {}!".format(name))
-
-print("hello who are you and where are you from and what is your age? ")
-name = input()
-country = input()
-age=input()
-
-print("hello{}! you are from {}. you are {} years old.".format(name.upper(), country.upper(), age.upper()))
+#further argument in function practice
+"""
+def hello_world_2args(a, b):
+    print ("{} {}".format(a, b))
+a1 = 'hello'
+b1 = 'world'
+a2 = 'love'
+b2 = 'coding'
+hello_world_2args(a1, b1)
+hello_world_2args(a2, b2)    
 
 
 
+def hello_world_3args(a, b, c, d):
+    print ("{} {} {} {}".format(a, b, c, d))
+a1 = 'hello'
+b1 = 'world'
+a2 = 'love'
+b2 = 'coding'
+c1= 'BT'
+d1 = 'furtHER'
+c2 = 'python'
+d2= 'module'
+hello_world_3args(a1, b1, c1, d1)
+hello_world_3args(a2, b2, c2, d2) 
+
+
+def convert_distance(miles):
+    kilometres=(miles * 8.0)/5.0
+    print("Converting distance in miles to kilometres")
+    print("Distance in miles:", miles)
+    print("Distance in kilometres:", kilometres)    
+convert_distance(44)
 
 
 
-def hello_world():
-    print("Hello  World!")
+def convert_temp(centigrade):
+    fahrenheit=(centigrade * 9.0)/5.0 + 32
+    kelvin = (centigrade + 273.15)
+    print ("Converting from centigrade:  ")
+    print ("Centigrade to fahrenheit: ", fahrenheit)
+    print ("Centigrade to Kelvin:", kelvin)
+ 
     
     
+def convert_temp2(centigrade):
+    fahrenheit=(centigrade * 9.0)/5.0 + 32
+    kelvin = (centigrade + 273.15)
+    return(fahrenheit, kelvin)
+centigrade_tst= 50
+fahrenheit, kelvin=convert_temp(centigrade_tst)
+print(fahrenheit, kelvin)
+
+
+def lpthw_practice(x, y):
+    print(x * y)
+x = 2
+y = 3
     
-    ""
+lpthw_practice(x, y)    
+
+
 def hello_world():
     print("Hello  World!")
     
@@ -120,7 +135,7 @@ def add_two_numbers_args(a, b):
 answer = add_two_numbers_args(a, b)
     
 #print(answer)
-"""
+ 
 def add_two_numbers_args(a, b):
     c = a + b
     return(c)
@@ -128,7 +143,8 @@ def add_two_numbers_args(a, b):
 a = int((input("enter a number: ")))
 b= int((input("enter a number: ")))
     
-answer = add_two_numbers_args(a, b)    
+answer = add_two_numbers_args(a, b)   
 """
-   
-    
+
+
+

@@ -40,7 +40,7 @@ class toppings:
         print("please select your toppings!")
     toppingselection()
 
-#class meat_toppings():
+#class  meat_toppings():
 def pepperoni():
     pepperoni_calorie=20
     return pepperoni_calorie
@@ -66,6 +66,7 @@ if firstmessage == "yes":
     order2=input("do you want ham? yes/no ")
     order3=input("do you want chicken? yes/no ")
     order4=input("Great! Now do you want veg on your pizza?")
+
    
     if order1 == "yes":
         pepperoni_calorie=pepperoni()
@@ -96,15 +97,18 @@ if firstmessage == "yes":
         if veg2=="yes":
             olives_calorie=olives()
 
+
 else:
     if firstmessage=="no":
         veg1=input("do you want sweetcorn? yes/no ")
         veg2=input("do you want olives? yes/no ")
+        
     if veg1 == "yes":
         sweetcorn_calorie=sweetcorn()
         print(veg2)
-    elif veg1=="no":
+    if veg1=="no":
         print(veg2)
+
 #    if veg2=="yes":
 #        olives_calorie=olives()
 print("Great your pizza is in the oven!")

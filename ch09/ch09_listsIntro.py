@@ -4,19 +4,21 @@ Created on Thu Dec 13 09:29:29 2018
 
 @author: mluci
 """
+#introducing compound type list and practicing functions on them
+
 
 #my_favourite_fruits=['apple', 'orange', 'banana']
 #x = ['this', 55, 'that', my_favourite_fruits] #lists contain mix of data
 #print(x.remove(my_favourite_fruits))
 #x[1]='and'
-#x.append('again')
+#x.append('again') #adds item to list as a sring
  
 #my_favourite_fruits=['apple', 'orange', 'banana',]
 #x = ['this', 55, 'that', 'that', 55, my_favourite_fruits] #lists contain mix of data
 #
 #y = []
 #x.remove('this')
-#y = x.append('this')
+#y = x.append('this') # y will still return a none type
 
 #x = ['the', 'cat', 'sat']
 #y=['on' 'the', 'mat']
