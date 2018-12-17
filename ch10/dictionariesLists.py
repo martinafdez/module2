@@ -10,7 +10,7 @@ metals=list(metals_info.keys()) #cast to list so can do list operations on it
 
 print(metals)
 #sort dictionary's 2nd value in descending order
-print(sorted(metals_info.items(), key=lambda kv:kv[1][1], reverse=True))
+print(sorted(metals_info.items(), key=lambda kv:kv[1][1], reverse=True)[:2] )#get the top two only
 
 
 
