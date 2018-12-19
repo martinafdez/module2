@@ -8,23 +8,24 @@
 
 ##Instructions to Import##
 #-When you want a specific function: from ch03_functionIntro import add_two_numbers
-#-When you want all the functions:
-from ch03_martina import *
+#-When you want all the functions: from ch03_martina import *
+import ch03_martina as chm
 
 #####Running Functions####
 
 
 a = int((input("enter a number: ")))
 b= int((input("enter a number: ")))  
-add_two_numbers_args(a, b, c)
+c= a+b
+chm.add_two_numbers_args(a, b, c)
 
 
-convert_distance(44)
+chm.convert_distance(44)
 
 
 
 centigrade_tst= 50
-fahrenheit, kelvin=convert_temp(centigrade_tst)
+fahrenheit, kelvin=chm.convert_temp(centigrade_tst)
 
 
 

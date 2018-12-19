@@ -34,7 +34,7 @@ def add_two_numbers():
 #-Version 2: With Arguments-#
 def add_two_numbers_args(a, b, c):
     print("{} added to {} is {}".format(a,b,c))    
-c= a+b    
+    
 
 ####Mid-class Challenge: Distance Converter Function####
 def convert_distance(miles):
