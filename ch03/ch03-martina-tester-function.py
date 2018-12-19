@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from functionIntro import add_two_numbers
-add_two_numbers()
 
-#import ch03_martina
-#ch03_martina.add_two_numbers()
+#--------Module 2: Lesson 3---------
+#----"Functions & Importing Modules"----
+
+
+##Instructions to Import##
+from ch03_functionIntro import add_two_numbers
+
+##Running Functions##
+add_two_numbers()
+#ch03_functionIntro.add_two_numbers()
 
 
