@@ -17,10 +17,9 @@ def phoneBook():
         phoneBook_dict[pers_name]=pers_no, pers_luckyNo, pers_postC, pers_city
         UserAge=int(input("Now please enter your age: "))
         phonesList=list(phoneBook_dict.values())
+        phonesList=list(phoneBook_dict.keys())
         if UserAge == int :
-            phoneBook_dict[pers_name]+=UserAge
-        elif UserAge != int:
-            print("Please enter a number")
+            return phoneBook_dict[pers_name].append([UserAge])
         QueenAndYou=QueensAge-UserAge
         print("The age gap between you and the Queen is {}".format(QueenAndYou))
         counter += 1

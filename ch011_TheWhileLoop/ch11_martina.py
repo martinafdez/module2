@@ -80,4 +80,26 @@ while True:
     print("Hello", name)
     
 ###Task 5&6: Guessing Number Game###
-    #See other files in folder#
+from random import randint
+attempts=0 #initialise counter for attempts and condition for while loop
+def guess(attempts, range):
+    number=randint(1, range) #randomize within a certain range
+    print ("Welcome! Can you guess my secret number?")
+    
+    while attempts > 0:
+        print("You have", attempts, " attempts remaining!") #print number of attempts remaining
+        guess=int(input("Enter a number smaller than 10: "))
+    
+        if guess != number: #if statement that compares user input to the randomiser variable
+            if guess > number:
+                print("too high!")
+                attempts -= 1 #subtract an attempt
+            elif guess < number:
+                print("too low.")
+                attempts -= 1 #subtract an attempt
+        else:
+            print("yes, you got it!")
+            break
+    print("END OF GAME: thanks for playing!")
+               
+guess(3, 10) #set the number of attempts and the range for the randomiser
