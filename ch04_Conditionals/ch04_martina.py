@@ -21,24 +21,25 @@ elif number <= 10: #this elif relates only to previous if statement, line 18
     print("that works!")
     
     
-###Task 2 & 3: ELIF and ELSE statements###
+###Task 2:ELSE statements###
 age=input("enter an age: ")
 age=int(age)
 
 if age < 13:
     print('child')
-elif age <18:        #Elif conditional follows an if statement#
+if age <18:        
     print('teen')
-elif age < 65:
+if age < 65:
     print('adult')
 else:                #Else statement appears at the end of the if statement as a final condition#
     print('pensioner')    
 
+###Task 2:ELIF statements###
 if age < 65:
     print('adult')
 elif age <18:
     print('teen')
-elif age < 13:
+elif age < 13:      #Elif conditional follows an if statement#
     print('child')
 else:
     print('pensioner')    
