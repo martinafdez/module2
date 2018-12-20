@@ -17,7 +17,7 @@ if number > 10:
     print("too high!")
 if number <=0:
     print("too low!") 
-elif number <= 10:
+elif number <= 10: #this elif relates only to previous if statement, line 18
     print("that works!")
     
     
