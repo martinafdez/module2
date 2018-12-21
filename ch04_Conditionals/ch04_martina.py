@@ -8,7 +8,7 @@ Created on Tue Dec  4 13:59:18 2018
 #----"Conditionals"----
 
 
-###Task 1: IF statements###
+###Task 3: IF statements###
 #-Version 1-#
 number=input("enter a number: ")
 number=int(number) #input will be string so you want to convert to integer
@@ -21,7 +21,7 @@ elif number <= 10: #this elif relates only to previous if statement, line 18
     print("that works!")
     
     
-###Task 2:ELSE statements###
+###Task 4:ELSE statements###
 age=input("enter an age: ")
 age=int(age)
 
@@ -34,7 +34,7 @@ if age < 65:
 else:                #Else statement appears at the end of the if statement as a final condition#
     print('pensioner')    
 
-###Task 2:ELIF statements###
+###Task 5:ELIF statements###
 if age < 65:
     print('adult')
 elif age <18:
