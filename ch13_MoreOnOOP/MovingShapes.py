@@ -15,11 +15,7 @@ class MovingShape:
         self.diameter = diameter
         self.figure = Shape(shape, diameter)
         
-        #Maximum and minimum start positions#
-        self.minx = self.diameter / 2
-        self.miny = self.diameter / 2
-        self.maxx = frame.width - self.diameter / 2
-        self.maxy = frame.height - self.diameter / 2
+        self.min_max_values(frame)
         
         #Adding random variation for start positions#
         self.x = self.minx + r() * (self.maxx - self.minx)
@@ -28,6 +24,15 @@ class MovingShape:
         #Create random movement#
         self.dx = 5 + 10 * r() 
         self.dy = 5 + 10 * r()
+        
+    #Diamonds vs Squares#    
+    def min_max_values(self, frame):
+        #Maximum and minimum start positions#
+        self.minx = self.diameter / 2
+        self.miny = self.diameter / 2
+        self.maxx = frame.width - self.diameter / 2
+        self.maxy = frame.height - self.diameter / 2
+
         
 
         
