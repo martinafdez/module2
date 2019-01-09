@@ -35,15 +35,15 @@ class MovingShape:
         self.maxx = self.frame.width - self.diameter / 2
         self.maxy = self.frame.height - self.diameter / 2
       
-    #areas#
-    def square_area(self,length):
-        sq_area = length * 2
-    
-    def rect_area(self, length, width):
-        rct_area = length * width
-        
-    def circle_area(self,  pi, radius):
-        area_circle = math.pi * (radius ** 2)
+#    #areas#
+#    def square_area(self,length):
+#        sq_area = length * 2
+#    
+#    def rect_area(self, length, width):
+#        rct_area = length * width
+#        
+#    def circle_area(self,  pi, radius):
+#        area_circle = math.pi * (radius ** 2)
 
                 
 #        #Move in positive and negative directions#
@@ -67,7 +67,6 @@ class MovingShape:
         #Hitting the wall#
         if self.x <= self.minx:
             self.dx = self.dx * -1
-            print("i'm a bouncy {} and my area is 
         if self.y <= self.miny:
             self.dy = self.dy * -1
         if self.x >= self.maxx:

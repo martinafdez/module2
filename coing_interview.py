@@ -11,42 +11,68 @@ Created on Tue Jan  8 13:53:38 2019
 #version 1#
 #alphabet=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 #for letter in alphabet:
-#    print(letter, )
-    
+#    print(letter)
+
+##Version 2#    
 #import string
 #string.ascii_uppercase
 #alphabet=list(string.ascii_uppercase)
 #for letter in alphabet:
-#    print(letter, )
-
-##For every 3rd letter write it to onsole lowercase##
+#    print(letter)
+#
+##For every 3rd letter write it to console lowercase##
 #import string
 #alphabetstring=string.ascii_uppercase
 #alphabet=list(string.ascii_uppercase)
-#
+
+#Version 1#
 #alphabet[2: :3] = [x.lower() for x in alphabet[2: :3]]
 # 
 #alphabetstring=' '.join(alphabet)
 #for i in alphabetstring:
 #    print (i)
-
-
-
-
-##For every 4th letter, write its numeric position## 
-import string
-alphabetstring=string.ascii_uppercase
-alphabet=list(string.ascii_uppercase)
-i = (alphabetstring[3: :4])
-alphabetstring.replace(i, i.lower())
-print(alphabetstring)
-
-
-for index, l in enumerate(alphabet):
-    print(index, l)
-    if index == alphabet[3: :4]:
-        l.replace(l, l.lower)
     
+#Version 2#
+import string
+alphstring = string.ascii_uppercase
+alph=list(string.ascii_uppercase)  
+
+for letter in alph:
+    if letter in range[2,26,3]:
+        print(alphstring.lower())
+    else:
+        print(letter.upper())
+    
+###For every 4th letter, write its numeric position## 
+#import string
+#
+#alphstring = string.ascii_uppercase
+#alph=list(string.ascii_uppercase)
+#
+#for index, letter in enumerate(alph):
+#
+#   if (index+1)%4==0:  
+#       print(index)
+       
+###If both conditions met print them else upper##
+#import string
+#
+#alphstring = string.ascii_uppercase
+#alph=list(string.ascii_uppercase)
+#
+#
+#
+#for index, letter in enumerate(alph):
+#   if (index+1)%4==0:  
+#       print(index+1)
+#   elif (index+1)%3==0:
+#       letter=letter.lower()
+#       print(letter)
+#   elif (index+1)%4==0:
+#       print(index+1)
+#   else:
+#       print(letter)
+
     
 
  
