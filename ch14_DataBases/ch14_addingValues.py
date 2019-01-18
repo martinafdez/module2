@@ -12,7 +12,7 @@ import time
 import datetime
 import random
 
-conn = sqlite3.connect('task1.db')
+conn = sqlite3.connect('ch14.db')
 c=conn.cursor()
 
 #Inserting data dynamically#
@@ -36,7 +36,7 @@ conn.close()
 
 
 ###Task 3: Reading data from databases###
-conn = sqlite3.connect('task1.db')
+conn = sqlite3.connect('ch14.db')
 c=conn.cursor()
 
 def read_from_db_all():

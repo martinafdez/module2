@@ -11,7 +11,7 @@ Created on Wed Jan  9 10:35:07 2019
 import sqlite3
 
 #Import and connect a database#
-conn = sqlite3.connect('PhoneBook1.db')
+conn = sqlite3.connect('Homework.db')
 
 #Connect cursor#
 c=conn.cursor()

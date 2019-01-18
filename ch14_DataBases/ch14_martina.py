@@ -9,7 +9,7 @@ Created on Wed Jan  9 09:10:47 2019
 import sqlite3
 
 #Import and connect a database#
-conn = sqlite3.connect('task1.db')
+conn = sqlite3.connect('ch14.db')
 
 #Connect cursor#
 c=conn.cursor()
