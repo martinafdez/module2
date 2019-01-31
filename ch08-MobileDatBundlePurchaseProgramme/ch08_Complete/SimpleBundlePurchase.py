@@ -21,12 +21,16 @@ def DataBundlePurchase(truePasscode, balance):
         return 'Wrong Password'
 
 
+
 def passwordCheck(truePasscode):
+
+        
     attempt = input('Please enter your password: ')
     if attempt == truePasscode:
         return True
     else:
         return False 
+      
     
 def checkBalance(balance):
     if balance > 0:
@@ -50,7 +54,7 @@ def TelNumber(balance):
         elif amountbuy > balance:
             return('Sorry, you do not have enough in your account for this purchase.')
         else:
-            multipleFive(amountbuy)
+            return multipleFive(amountbuy)          
     else:
         return('Sorry, your numbers do not match. Try again')
 

@@ -1,0 +1,22 @@
+.bodyall {
+  background-color: DarkSalmon;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: red;
+
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: red;
+}
+
+#refreshbutton {
+
+  background: black;
+  color: purple;
+}

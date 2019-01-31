@@ -1,0 +1,147 @@
+## -*- coding: utf-8 -*-
+#"""
+#Created on Mon Jan 21 09:29:28 2019
+#
+#@author: mluci
+#"""
+#
+#
+import requests
+import random 
+#
+###############
+####Fairytale randomiser API###
+##############
+
+##########################NAME API###########################
+endpoint_name= "https://www.behindthename.com/api/random.json"
+payload={"key": "API_ID", "number": "1"}
+
+name_response = requests.get(endpoint_name, params=payload)
+
+created_name=name_response.json()
+
+name = created_name['names']
+namestr=str(name)
+final_name=namestr.strip("[]''")
+
+##########################NUMBER API########################
+#endpoint_number= "http://numbersapi.com/random/trivia"
+
+#numb_response=requests.get(endpoint_number)
+
+#created_numb = numb_response.json()
+
+#print(created_numb)
+
+#number=random.randint(0,10)
+
+######################ACTIVITY API##########################
+endpoint_activity="https://www.boredapi.com/api/activity"
+
+act_response=requests.get(endpoint_activity)
+
+created_act=act_response.json()
+
+activity=created_act["activity"]
+actstr=str(activity)
+final_act=actstr.strip("[]''")
+
+######################ADVICE API###########################
+advice_endpoint= "https://api.adviceslip.com/advice"
+
+ad_response=requests.get(advice_endpoint)
+
+created_ad=ad_response.json()
+
+advice_slip=created_ad["slip"]["advice"]
+
+#########################COCKTAIL API#####################
+cocktail_endpoint="https://www.thecocktaildb.com/api/json/v1/1/random.php"
+
+cocktail_response=requests.get(cocktail_endpoint)
+
+created_cocktail=cocktail_response.json()
+
+cocktail=created_cocktail["drinks"][0]["strDrink"]
+
+
+##########################COLOUR API#####################
+try:
+    endpoint_colour="http://www.colr.org/json/color/random"
+
+    colour_response=requests.get(endpoint_colour)
+#    print(colour_response)
+
+    created_colour=colour_response.json()
+ #   print(created_colour)
+    colour=created_colour["colors"][0]["tags"][0]["name"]
+ #   print(colour)
+except IndexError:
+    #print("rainbow")
+    colour="rainbow"
+
+
+########################ANIMAL API######################
+try:
+    pet_endpoint="http://api.petfinder.com/pet.getRandom?&"
+    payload={"key": "API_ID", "format": "json", "output": "basic"}
+    
+    pet_response=requests.get(pet_endpoint, params=payload)
+ #   print(pet_response)
+    
+    created_pet=pet_response.json()
+ #   print(created_pet)
+    
+    pet_name=created_pet['petfinder']['pet']['name']['$t']
+ #   print(pet_name)
+    pet_breed=created_pet['petfinder']['pet']['breeds']['breed']['$t']
+ #   print(pet_breed)
+    pet_type=created_pet['petfinder']['pet']['animal']['$t']
+ #   print(pet_type)
+except TypeError:
+    pet_breed="pitbull"
+   # print(pet_breed)
+except NameError:
+    pet_type="dog"
+    
+
+
+
+##########################WEATHER & LOCATION API########
+###randomise postcode selection###
+postcodes = {'EH11BQ', 'CF102BU', 'BT15BA', 'CB39BB'}
+name=random.sample(postcodes, 1)
+strname=str(name)
+final_postcode=strname.strip("[]''")
+
+###link it to postcode API###
+weather_endpoint="https://api.postcodes.io/postcodes/"
+postcode = final_postcode
+test_postcode_url = (weather_endpoint + postcode)
+#print(test_postcode_url)
+
+postcode_response = requests.get(weather_endpoint + postcode)
+
+data_postcode = postcode_response.json()
+
+town_name=data_postcode["result"]['country']
+
+
+###link it to weather API###
+endpoint_weather="http://api.openweathermap.org/data/2.5/weather"
+payload={"appid":"API_ID",  "q": town_name}
+
+response=requests.get(endpoint_weather, params=payload)
+data=response.json()
+
+weather=data['weather'][0]['description']
+
+
+
+##########################GENERATE FAIRYTALE############
+template = ("Once upon a time in the land far far away of {} there was an elf​ called ​{} who​ lived with a {} coloured {} {} named {}​.One morning {}​ woke up and saw that outside it showed signs of {}. {} was very bored so decided to {}. {} and {} did this all day long before the sun went down and {} finally decided to settle down and order a Chinese takeaway washed down with a {} cocktail. For dessert {} noticed they had been given a fortune cookie so they opened the cookie to find a message inside that said read ' {}'. The next day {} woke up inspired instead of bored and lived happily ever after.".format(town_name, final_name, colour, pet_breed, pet_type, pet_name, final_name, weather, final_name,  final_act, final_name, pet_name,final_name, cocktail, final_name, advice_slip, final_name))
+
+print(template)
+
+

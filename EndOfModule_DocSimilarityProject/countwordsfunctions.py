@@ -17,7 +17,7 @@ def readStopWords(stopword_file):
     stopslines=slines.split()
 #    print(stopslines)
     return stopslines
-readStopWords('stopwords.txt')
+#readStopWords('stopwords.txt')
 
 
 #task 1#
@@ -38,7 +38,7 @@ def countWords(text_file, stops):
 #    for word, times in count.items():
 #        print (word, times)
    
-countWords('mobydick.txt', 'stopwords.txt')
+#countWords('mobydick.txt', 'stopwords.txt')
 
 
 
@@ -48,7 +48,7 @@ def PrintTop20():
     csorted=sorted(counts.items(), key=lambda kv:kv[1], reverse=True)[:20]
     for word, times in csorted:
         print ("{} = {}".format(word, times))
-PrintTop20()
+#PrintTop20()
 
 
 

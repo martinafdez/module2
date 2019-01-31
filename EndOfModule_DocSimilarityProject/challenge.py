@@ -7,7 +7,6 @@ Created on Fri Jan 18 15:32:54 2019
 """
 ###Doc Similarity Challenge###
 
-import numpy as np
 
 def readStopWords(stopword_file):
     stopword_file = open(stopword_file, 'r')
@@ -15,7 +14,7 @@ def readStopWords(stopword_file):
     stopslines=slines.split()
 #    print(stopslines)
     return stopslines
-readStopWords('stopwords.txt')
+#readStopWords('stopwords.txt')
 
 
 
@@ -31,7 +30,7 @@ def lexdiv1(text_file):
             else:
                 g1[w] = 1
     return g1
-lexdiv1('george01.txt')
+#lexdiv1('george01.txt')
 
 
 def lexdiv2(text_file):
@@ -46,7 +45,7 @@ def lexdiv2(text_file):
             else:
                 g2[w] = 1
     return g2
-lexdiv2('george02.txt')
+#lexdiv2('george02.txt')
 
 def similarity(george, george2):
     g1=lexdiv1(george)
@@ -62,11 +61,11 @@ def similarity(george, george2):
     roundedGeorge=round(georgeSim, 3)
     print("compare: ({} <> {}) = {}".format(george, george2, roundedGeorge))
 
-similarity('george01.txt','george02.txt')
-similarity('george01.txt','george03.txt')
-similarity('george01.txt','george04.txt' )
-similarity('george02.txt','george03.txt' )
-similarity('george02.txt','george04.txt' )
-similarity('george03.txt','george04.txt' )
+#similarity('george01.txt','george02.txt')
+#similarity('george01.txt','george03.txt')
+#similarity('george01.txt','george04.txt' )
+#similarity('george02.txt','george03.txt' )
+#similarity('george02.txt','george04.txt' )
+#similarity('george03.txt','george04.txt' )
 
 
