@@ -1,22 +1,22 @@
 .bodyall {
-  background-color: DarkSalmon;
+  background-color: #ffccff;
 }
 
 h1 {
   text-align: center;
-  text-decoration: underline;
-  color: red;
+  text-decoration: dotted;
+  color: purple;
 
 }
 
 h2 {
   text-align: center;
-  text-decoration: underline;
+  text-decoration: dotted;
   color: red;
 }
 
-#refreshbutton {
-
+#refreshy {
   background: black;
   color: purple;
+  align: center;
 }
